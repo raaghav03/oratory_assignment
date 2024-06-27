@@ -8,10 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        "neutral-gray": "#E7E7E7",
+        "neutral-gray-300": "#B0B0B0",
+        "neutral-gray-5": "#3D3D3D",
+        "neutral-gray-4": "#888888",
+        "neutral-gray-3": "#5D5D5D",
+        "neutral-gray-1": "#6E6D6D",
+        "color-primary": "#D0D5DD",
+        "brand-gray":"#4F4F4F",
+        orange: {
+          "300": "#DC4A2D",
+        },
+        success: {
+          "50": "#ECFDF3",
+          "200": "#ABEFC6",
+          "700": "#067647",
+        },
+      },
+      fontFamily: {
+        brand: ["GeneralSans", "sans-serif"],
       },
     },
   },
