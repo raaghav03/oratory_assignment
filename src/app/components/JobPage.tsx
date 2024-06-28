@@ -16,6 +16,7 @@ import {
     Edit,
     Seperator,
 } from "../assets/Icons";
+import Logo from "../assets/Rectangle43.svg"
 import { TabNav } from "@radix-ui/themes";
 const JobPage = () => {
     return (
@@ -102,7 +103,6 @@ const JobPage = () => {
                             <div className="font-brand text-neutral-gray-1 font-medium text-sm">
                                 About the job
                             </div>
-
                             <div className="text-base font-brand leading-7 text-neutral-gray-5 font-medium">
                                 1. Handle the UI/UX research design<br></br>
                                 2. Work on researching on latest web applications designs &
@@ -123,8 +123,9 @@ const JobPage = () => {
                     </div>
                     <div className="px-24 py-9 gap-4 flex flex-col">
                         {" "}
-                        {/* <Image src="../assets/Rectangle43.svg" alt="attlasian logo" width={40} height={40} /> */}
-                        <div className="font-medium text-brand-gray font-brand text-xl">Atlassian</div>
+                        <div className="flex items-center gap-3 py-2.5 flex-row">
+                            <Image src={Logo} alt="attlasian logo" width={40} height={40} />
+                            <div className="font-medium text-brand-gray font-brand text-xl">Atlassian</div></div>
                         <div className="grid grid-cols-2  gap-y-6">
                             <div className="flex flex-col gap-2 w-fit">
                                 <div className="font-brand text-neutral-gray-1 inline w-fit   font-medium text-sm">
