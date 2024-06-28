@@ -16,9 +16,11 @@ const config: Config = {
         "neutral-gray-3": "#5D5D5D",
         "neutral-gray-1": "#6E6D6D",
         "color-primary": "#D0D5DD",
-        "brand-gray":"#4F4F4F",
+        "brand-gray": "#4F4F4F",
         orange: {
           "300": "#DC4A2D",
+          bg: "#FEF4F2",
+          stroke: "#FED3CA",
         },
         success: {
           "50": "#ECFDF3",

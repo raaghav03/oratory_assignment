@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 import {
     Dot,
     GreenBadgeDot,
@@ -9,7 +8,15 @@ import {
     Figma,
     Illustrator,
     XD,
+    User,
+    Matches,
+    Messages,
+    Views,
+    Delete,
+    Edit,
+    Seperator,
 } from "../assets/Icons";
+import { TabNav } from "@radix-ui/themes";
 const JobPage = () => {
     return (
         <>
@@ -50,22 +57,22 @@ const JobPage = () => {
                                     Skills Required
                                 </div>
                                 <div className="font-brand text-neutral-gray-5 flex flex-col gap-2 font-medium text-base">
-                                    <div className="flex flex-row items-center px-1.5 gap-1 py-1 w-fit border-color-primary border-[1px] rounded-md">
+                                    <div className="flex font-brand flex-row items-center px-1.5 gap-1 py-1 w-fit border-color-primary border-[1px] rounded-md">
                                         <Figma />
                                         Figma
                                     </div>
-                                    <div className="flex flex-row items-center px-1.5 gap-[4px] py-1 w-fit border-color-primary border-[1px] rounded-md">
+                                    <div className="flex flex-row font-brand items-center px-1.5 gap-[4px] py-1 w-fit border-color-primary border-[1px] rounded-md">
                                         <Illustrator />
                                         Adobe Illustrator
                                     </div>
-                                    <div className="flex flex-row items-center px-1.5 gap-1 py-1 w-fit border-color-primary border-[1px] rounded-md">
+                                    <div className="flex flex-row font-brand items-center px-1.5 gap-1 py-1 w-fit border-color-primary border-[1px] rounded-md">
                                         <XD />
                                         Adobe XD
                                     </div>
                                 </div>
                             </div>
                             <div className="flex flex-col gap-2">
-                                <div className="font-brand text-neutral-gray-1 font-medium text-sm">
+                                <div className=" font-brand text-neutral-gray-1 font-medium text-sm">
                                     Preferred Language
                                 </div>
                                 <div className="font-brand text-neutral-gray-5 font-semibold text-base">
@@ -96,8 +103,7 @@ const JobPage = () => {
                                 About the job
                             </div>
 
-
-                            <div className="text-base leading-7">
+                            <div className="text-base font-brand leading-7 text-neutral-gray-5 font-medium">
                                 1. Handle the UI/UX research design<br></br>
                                 2. Work on researching on latest web applications designs &
                                 trends
@@ -118,7 +124,7 @@ const JobPage = () => {
                     <div className="px-24 py-9 gap-4 flex flex-col">
                         {" "}
                         {/* <Image src="../assets/Rectangle43.svg" alt="attlasian logo" width={40} height={40} /> */}
-                        <div className="font-medium text-brand-gray text-xl">Atlassian</div>
+                        <div className="font-medium text-brand-gray font-brand text-xl">Atlassian</div>
                         <div className="grid grid-cols-2  gap-y-6">
                             <div className="flex flex-col gap-2 w-fit">
                                 <div className="font-brand text-neutral-gray-1 inline w-fit   font-medium text-sm">
@@ -171,7 +177,59 @@ const JobPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" border-l-2 border-black w-1/4"></div>
+                <div className=" border-l-[1px] border-neutral-gray w-1/4 px-6 py-9 flex flex-col gap-6">
+                    <div className="flex flex-row items-center justify-between">
+                        <button className="flex font-brand flex-row gap-[10px] py-3 px-6 bg-orange-bg items-center text-orange-300 font-medium text-base rounded-lg border-[1px] border-orange-300">
+                            <Delete />
+                            Delete Job
+                        </button>
+                        <button className="flex font-brand flex-row gap-[10px] py-3 px-6 bg-orange-300 items-center text-white font-medium text-base rounded-lg border-2 border-orange-stroke">
+                            <Edit />
+                            Edit job
+                        </button>
+                    </div>
+                    <div className="p-3 flex flex-col gap-4">
+                        <div className="flex flex-row items-center text-brand-gray p-[10px] justify-between w-full">
+                            <div className="flex flex-row items-center font-medium gap-[10px]">
+                                {" "}
+                                <User /> <div className="text-base font-brand">Applicants</div>
+                            </div>
+                            <div className="text-xl font-semibold text-neutral-gray-5 font-brand">
+                                400
+                            </div>
+                        </div>
+                        <Seperator />
+                        <div className="flex flex-row items-center font-brand text-brand-gray p-[10px] justify-between w-full">
+                            <div className="flex flex-row items-center font-medium gap-[10px]">
+                                {" "}
+                                <Matches /> <div className="text-base font-brand">Matches</div>
+                            </div>
+                            <div className="text-xl font-semibold text-neutral-gray-5 font-brand">
+                                100
+                            </div>
+                        </div>
+                        <Seperator />
+                        <div className="flex flex-row items-center font-brand text-brand-gray p-[10px] justify-between w-full">
+                            <div className="flex flex-row items-center font-medium gap-[10px]">
+                                {" "}
+                                <Messages /> <div className="text-base font-brand">Messages</div>
+                            </div>
+                            <div className="text-xl font-semibold font-brand text-neutral-gray-5">
+                                147
+                            </div>
+                        </div>
+                        <Seperator />
+                        <div className="flex flex-row items-center text-brand-gray p-[10px] justify-between w-full">
+                            <div className="flex flex-row items-center font-brand font-medium gap-[10px]">
+                                {" "}
+                                <Views /> <div className="text-base font-brand">Views</div>
+                            </div>
+                            <div className="text-xl font-semibold font-brand text-neutral-gray-5">
+                                800
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     );
